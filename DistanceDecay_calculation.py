@@ -13,7 +13,7 @@ class Iterator:
         self.count = 0
 
     def cumulativeSum(self, row, sumColumn, dependent):
-        """Calculates a cumulative sum of [sumColumn] if value belongs to the same group as earlier value (based on [dependent] column), if not restarts the calculation"""
+        """Calculates a cumulative sum of [sumColumn] if value belongs to the same group as earlier value (based on [dependent] column), if not --> restarts the calculation"""
         if row[dependent] != self.code:
             self.code = row[dependent]
             self.count=row[sumColumn]   #Clear count value
